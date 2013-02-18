@@ -53,6 +53,11 @@ Tour.prototype._next = function() {
     //
     // Show the next .popover
     this._open(obj);
+  } else {
+    //
+    // The tour is over so we need to reset the counter
+    // in order to run the tour again if need
+    this._currentStep = 0;
   }
 };
 
