@@ -9,18 +9,24 @@
   <style>
     body { font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif; }
 
-    h1 { display: inline-block; font-weight: normal; }
+    .navbar-inner { border-radius: 0; }
 
-    h1 span { font-size: 17.5px; color: maroon; margin-left: 10px; }
+    a.brand span { color: maroon; margin-left: 10px; font-size: 12px; }
 
-    pre { margin-top: 30px; margin-bottom: 30px; }
+    pre { margin-top: 20px; margin-bottom: 30px; }
   </style>
 </head>
 <body>
 
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <a href="https://github.com/emilioTe/butor" class="brand">butor<span>0.0.1</span></a>
+      </div>
+    </div>
+  </div>
+  
   <div class="container">
-    <h1>butor<span>0.0.1</span></h1>
-    
     <div class="content">
     
       <pre>
@@ -31,7 +37,7 @@
 
         tour
         .addStep({
-          element: 'h1',
+          element: 'a.brand',
           title: 'Huh?',
           content: '(b)ootstrap t(utor)'
         })
@@ -50,7 +56,7 @@
         .run();
       </pre>
       
-      <p>Have an issue or request? <a href="https://github.com/emilioTe/butor/issues">Submit it</a>. Or you could <a href="https://raw.github.com/emilioTe/butor" class="github">check out the code</a>.</p>
+      <p>Have an issue or request? <a href="https://github.com/emilioTe/butor/issues">Submit it</a>. Or you could <a href="https://github.com/emilioTe/butor" class="github">check out the code</a>.</p>
     
     </div>
   </div>
@@ -63,7 +69,7 @@
 
   tour
   .addStep({
-    element: 'h1',
+    element: 'a.brand',
     title: 'Huh?',
     content: '(b)ootstrap t(utor)'
   })
