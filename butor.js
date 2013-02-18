@@ -56,7 +56,7 @@ Tour.prototype._next = function() {
   } else {
     //
     // The tour is over so we need to reset the counter
-    // in order to run the tour again if need
+    // in order to run the tour again if needed
     this._currentStep = 0;
   }
 };
