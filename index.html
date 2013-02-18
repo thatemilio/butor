@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>butor (0.0.1)</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+  
+  <style>
+    body { font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+    h1, h4 { font-weight: normal; }
+
+    h1 { display: inline-block; }
+
+    h1 span { font-size: 17.5px; color: maroon; margin-left: 10px; }
+
+    pre { margin-top: 30px; margin-bottom: 30px; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>butor<span>0.0.1</span></h1>
+    
+    <div class="content">
+    
+      <pre>
+        // This is the actual JavaScript used
+        // on this webpage.
+        
+        var tour = new Tour();
+
+        tour
+        .addStep({
+          element: 'h1',
+          title: 'Huh?',
+          content: '(b)ootstrap t(utor)'
+        })
+        .addStep({
+          element: 'pre',
+          placement: 'top',
+          title: 'Today I learned',
+          content: 'How to make a Bootstrap tour.'
+        })
+        .addStep({
+          element: 'a.github',
+          placement: 'top',
+          title: 'Learnz some more',
+          content: 'Check out the readme too!'
+        })
+        .run();
+      </pre>
+      
+      <p>Have an issue or request? <a href="https://github.com/emilioTe/butor/issues">Submit it</a>. Or you could <a href="https://raw.github.com/emilioTe/butor" class="github">check out the code</a>.</p>
+    
+    </div>
+  </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+<script src="https://raw.github.com/emilioTe/butor/master/butor.js"></script>
+<script>
+  var tour = new Tour();
+
+  tour
+  .addStep({
+    element: 'h1',
+    title: 'Huh?',
+    content: '(b)ootstrap t(utor)'
+  })
+  .addStep({
+    element: 'pre',
+    placement: 'top',
+    title: 'Today I learned',
+    content: 'How to make a Bootstrap tour.'
+  })
+  .addStep({
+    element: 'a.github',
+    placement: 'top',
+    title: 'Learnz some more',
+    content: 'Check out the readme too!'
+  })
+  .run();
+</script>
+
+</body>
+</html>
