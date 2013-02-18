@@ -7,6 +7,10 @@ existing [Bootstrap popover plugin](http://twitter.github.com/bootstrap/javascri
 page tour.
 
 
+## Demo
+http://emiliote.github.com/butor/
+
+
 ## Installation
 
 ```html
