@@ -26,7 +26,7 @@ To start we need a `Tour` to use.
 
 Now we need to add our tour's steps. Each step's `Object` requires, at minimum, three keys: 
 
-* element: a string to use as a jQuery selector
+* element: a jQuery selector string pointing at the element that needs a popover
 * title: a string to use as the popover's title
 * content: a string to use for the popover's content
 
