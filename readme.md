@@ -1,6 +1,4 @@
-# butor
-
-:zero:.:zero:.:one:
+# butor :zero:.:one:.:zero:
 
 Super simple [Bootstrap](http://getbootstrap.com) Tutor plugin that utitlizes the
 existing [Bootstrap popover plugin](http://twitter.github.com/bootstrap/javascript.html#popovers) to create a single
@@ -28,7 +26,7 @@ To start we need a `Tutor` to use.
   var tutor = new Tutor();
 ```
 
-Now we need to add our tour's steps. Each step's `Object` requires, at minimum, three keys: 
+Now we need to add our tutor's steps. Each step's `Object` requires, at minimum, three keys: 
 
 * element: a jQuery selector string pointing at the element that needs a popover
 * title: a string to use as the popover's title
@@ -51,7 +49,7 @@ You can add any supported `popover` options to the `Object`, but those three are
   });
 ```
 
-All that's left is to start the tour.
+All that's left is to teach the user.
 
 ```javascript
   tutor.teach();
