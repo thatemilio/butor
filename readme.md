@@ -2,7 +2,7 @@
 
 :zero:.:zero:.:one:
 
-Super simple [Bootstrap](http://getbootstrap.com) Tour plugin that utitlizes the
+Super simple [Bootstrap](http://getbootstrap.com) Tutor plugin that utitlizes the
 existing [Bootstrap popover plugin](http://twitter.github.com/bootstrap/javascript.html#popovers) to create a single
 page tour.
 
@@ -22,10 +22,10 @@ http://emiliote.github.com/butor/
 
 ## Usage
 
-To start we need a `Tour` to use.
+To start we need a `Tutor` to use.
 
 ```javascript
-  var tour = new Tour();
+  var tutor = new Tutor();
 ```
 
 Now we need to add our tour's steps. Each step's `Object` requires, at minimum, three keys: 
@@ -37,7 +37,7 @@ Now we need to add our tour's steps. Each step's `Object` requires, at minimum, 
 You can add any supported `popover` options to the `Object`, but those three are required.
 
 ```javascript
-  tour
+  tutor
   .addStep({
     element: '.navbar ul.nav li.logout',
     title: 'Log out',
@@ -54,7 +54,7 @@ You can add any supported `popover` options to the `Object`, but those three are
 All that's left is to start the tour.
 
 ```javascript
-  tour.run();
+  tutor.teach();
 ```
 
 I thought that was pretty easy?

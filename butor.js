@@ -1,7 +1,7 @@
 //
 //    butor 0.0.1
 //
-//    Super simple Bootstrap Tour plugin that utitlizes the
+//    Super simple Bootstrap Tutor plugin that utitlizes the
 //    existing Bootstrap popover plugin to create a single
 //    page tour.
 //
@@ -10,7 +10,7 @@
 //
 
 
-function Tour () {
+function Tutor () {
   this._defaultOptions = {
     placement: 'bottom',
     trigger: 'manual',
@@ -24,7 +24,7 @@ function Tour () {
 }
 
 
-Tour.prototype.addStep = function(obj) {
+Tutor.prototype.addStep = function(obj) {
   //
   // Update our default options with any
   // user supplied ones
@@ -44,7 +44,7 @@ Tour.prototype.addStep = function(obj) {
 };
 
 
-Tour.prototype._next = function() {
+Tutor.prototype._next = function() {
   var stepLen = this._steps.length - 1;
 
   if (this._currentStep <= stepLen) {
@@ -62,7 +62,7 @@ Tour.prototype._next = function() {
 };
 
 
-Tour.prototype._open = function(obj) {
+Tutor.prototype._open = function(obj) {
   var self = this;
 
   //
@@ -94,7 +94,7 @@ Tour.prototype._open = function(obj) {
 };
 
 
-Tour.prototype.run = function() {
+Tutor.prototype.teach = function() {
   var obj = this._steps[0];
   
   //
