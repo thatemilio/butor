@@ -1,5 +1,5 @@
 //
-//    butor 0.0.1
+//    butor 0.1.0
 //
 //    Super simple Bootstrap Tutor plugin that utitlizes the
 //    existing Bootstrap popover plugin to create a single
