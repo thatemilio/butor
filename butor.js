@@ -1,5 +1,5 @@
 //
-//    butor 0.1.0
+//    butor 0.1.1
 //
 //    Super simple Bootstrap Tutor plugin that utitlizes the
 //    existing Bootstrap popover plugin to create a single
@@ -8,6 +8,7 @@
 //    https://github.com/emilioTe/butor
 //    http://getbootstrap.com
 //
+
 
 
 function Tutor () {
@@ -21,7 +22,9 @@ function Tutor () {
   };
   this._steps = [];
   this._currentStep = 0;
+  this._onComplete = null;
 }
+
 
 
 Tutor.prototype.addStep = function(obj) {
@@ -44,6 +47,7 @@ Tutor.prototype.addStep = function(obj) {
 };
 
 
+
 Tutor.prototype._next = function() {
   var stepLen = this._steps.length - 1;
 
@@ -58,8 +62,14 @@ Tutor.prototype._next = function() {
     // The tour is over so we need to reset the counter
     // in order to run the tour again if needed
     this._currentStep = 0;
+
+    //
+    // We should also run the _onComplete function if
+    // it was provided
+    if (typeof this._onComplete === 'function') this._onComplete();
   }
 };
+
 
 
 Tutor.prototype._open = function(obj) {
@@ -94,10 +104,17 @@ Tutor.prototype._open = function(obj) {
 };
 
 
-Tutor.prototype.teach = function() {
+
+Tutor.prototype.teach = function(cb) {
   var obj = this._steps[0];
+
+  //
+  // Check if we have a function to call when we're
+  // done
+  if (typeof cb === 'function') this._onComplete = cb;
   
   //
   // Time for launch
   this._open(obj);
 };
+

@@ -1,4 +1,4 @@
-# butor :zero:.:one:.:zero:
+# butor :zero:.:one:.:one:
 
 Super simple [Bootstrap](http://getbootstrap.com) Tutor plugin that utitlizes the
 existing [Bootstrap popover plugin](http://twitter.github.com/bootstrap/javascript.html#popovers) to create a single
@@ -53,6 +53,14 @@ All that's left is to teach the user.
 
 ```javascript
   tutor.teach();
+```
+
+But sometimes you want to run some code after you're done teaching so that is where be able to pass in a function comes in handy.
+
+```javascript
+  tutor.teach(function() {
+    alert("and that concluded today's lesson.");
+  });
 ```
 
 I thought that was pretty easy?
