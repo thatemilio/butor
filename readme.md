@@ -55,11 +55,11 @@ All that's left is to teach the user.
   tutor.teach();
 ```
 
-But sometimes you want to run some code after you're done teaching so that is where be able to pass in a function comes in handy.
+But sometimes you want to run some code after you're done teaching so that is where being able to pass in a function comes in handy.
 
 ```javascript
   tutor.teach(function() {
-    alert("and that concluded today's lesson.");
+    alert("and that concludes today's lesson.");
   });
 ```
 
