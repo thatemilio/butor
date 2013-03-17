@@ -1,6 +1,6 @@
 # butor :zero:.:one:.:one:
 
-Super simple [Bootstrap](http://getbootstrap.com) Tutor plugin that utitlizes the
+Super simple [Bootstrap](http://getbootstrap.com) Tutor plugin that utilizes the
 existing [Bootstrap popover plugin](http://twitter.github.com/bootstrap/javascript.html#popovers) to create a single
 page tour.
 
