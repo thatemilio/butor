@@ -6,7 +6,7 @@ page tour.
 
 
 ## Demo
-http://emiliote.github.com/butor/
+http://emiliote.github.io/butor/
 
 
 ## Installation
