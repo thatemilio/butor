@@ -5,7 +5,7 @@
 //    existing Bootstrap popover plugin to create a single
 //    page tour.
 //
-//    https://github.com/emilioTe/butor
+//    https://github.com/thatemilio/butor
 //    http://getbootstrap.com
 //
 
